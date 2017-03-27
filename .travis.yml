@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "6.1" # LTS version
+sudo: false
+install:
+  - npm install
+script:
+  - npm run test
+  - npm run lint
+notifications:
+  slack: rozvoj-fit:oIJm1tjEXhiJLDHvp2ATCZIT
+cache:
+  directories:
+  - node_modules
+before_cache:
+  - npm prune
