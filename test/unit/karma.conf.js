@@ -3,7 +3,20 @@
 // we are also using it with karma-webpack
 //   https://github.com/webpack/karma-webpack
 
-var webpackConfig = require('../../build/webpack.test.conf')
+const createConfig = require('ream/lib/create-config')
+const loadConfig = require('ream/lib/load-config')
+
+let webpackConfig = {}
+
+// Creating an Ream app to create a webpack config
+loadConfig.babel().then(function (babelConfig) {
+  webpackConfig = createConfig({
+    cwd: process.cwd(),
+    type: 'client',
+    dev: false,
+    babel: babelConfig,
+  }).toConfig()
+})
 
 module.exports = function (config) {
   config.set({
