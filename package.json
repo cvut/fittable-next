@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
+    "babel-eslint": "^7.2.1",
     "ream": "^0.11.1",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0"
