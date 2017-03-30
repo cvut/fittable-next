@@ -22,11 +22,12 @@
     "chai": "^3.5.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
-    "eslint": "^3.14.1",
-    "eslint-config-standard": "^6.2.1",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
     "eslint-friendly-formatter": "^2.0.7",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "jest": "^19.0.2",
@@ -57,7 +58,13 @@
     "not ie <= 8"
   ],
   "jest": {
-    "moduleFileExtensions": ["js", "json", "vue", "jsx", "node"],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue",
+      "jsx",
+      "node"
+    ],
     "modulePaths": [
       "<rootDir>/src",
       "<rootDir>"
