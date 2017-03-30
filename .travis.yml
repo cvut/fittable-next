@@ -1,16 +1,21 @@
 language: node_js
 node_js:
-  - "6.1" # LTS version
+- node
 sudo: false
+dist: trusty
+addons:
+  apt:
+    sources:
+    - sourceline: deb https://dl.yarnpkg.com/debian/ stable main
+      key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
+    packages:
+    - yarn
 install:
-  - npm install
+  - yarn
 script:
-  - npm run test
-  - npm run lint
-notifications:
-  slack: rozvoj-fit:oIJm1tjEXhiJLDHvp2ATCZIT
+  - yarn run lint
+  - yarn test
 cache:
+  yarn: true
   directories:
   - node_modules
-before_cache:
-  - npm prune
