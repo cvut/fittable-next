@@ -1,6 +1,6 @@
 <template>
   <div>Timetable page<br>
-    Go to <a href="/settings">the settings page</a>.
+    Go to <router-link to="/settings">the settings page</router-link>.
   </div>
 </template>
 
