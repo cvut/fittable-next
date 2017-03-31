@@ -11,13 +11,16 @@ addons:
     packages:
     - yarn
 install:
-  - yarn
+- yarn
 before_script:
-  - yarn run build
+- yarn run build
 script:
-  - yarn run lint
-  - yarn test
+- yarn run lint
+- yarn test
 cache:
   yarn: true
   directories:
   - node_modules
+notifications:
+  slack:
+    secure: K5br5NyKGGyLmWL/S+CaixjhEhmm5jJeJOxhAv91UPOHU8pRx/lvJutU6cj3AsCi7s/QwJr9MKh5ZYfwLQ2jX5m1gKZ4wOyYXGcmZHAaLLpnXQnh2UwFIbPtU3p6LCFeJd9P5fMnIe3XxUGiUm8KNrcRDCgKbc4NXr7XOTKrGzRBQkuQCiZiuWvEZt2l2MEdb5ONma7B+Q9qKeoKzBcZyjtCShjUa0n8ohqM6IJyAy1Q7UwQM6BA/L5s2ODlHXjHtdeL/i6pHfIBkeg3gUHFq5OZ44uOKRwuB978n8N7DBEqJYwwgEestSpYWkZ3tDN4R9Uyspm9HSb6sBxB3yBFy72KGYaictdyvXyGu4e9WFIZkiBylAa/9EiCmvG2n2x9ra3GwbBieSGUekEBJn3jbmB9gywcl3M1AdeTjYA0+yPiKMOJcdr2Ka1BWJXhdnFA64ostWudXqJeHDqrxrfXJEWQjqKF+isUTXDaDeM17GJ7vlWAGsJURFYj8k0BeKcL9BfopiSXo7CP7iugqtvZei+CVHAH2p+wv1MwkCC5LPLC8capcVehOsrW8lVZNoV4pcWeRSKgEM7xHqsSGUsiEn7CRVTRr4QtU4pr3Fy5qMidrEtbFRlGLSAP1gvLnKBuoQyM2LttCwCR3SJVlvmiGCGPBUQvJ8DUH79HNDfE71A=
