@@ -12,6 +12,8 @@ addons:
     - yarn
 install:
   - yarn
+before_script:
+  - yarn run build
 script:
   - yarn run lint
   - yarn test
