@@ -14,11 +14,12 @@
   },
   "dependencies": {
     "babel-eslint": "^7.2.1",
-    "ream": "^0.11.1",
+    "ream": "beta",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0"
   },
   "devDependencies": {
+    "babel-preset-vue-app": "^1.0.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
     "eslint": "^3.18.0",
