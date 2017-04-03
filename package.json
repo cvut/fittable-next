@@ -10,7 +10,9 @@
     "start": "ream start",
     "unit": "jest",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "format": "eslint --fix --ext .js,.vue src test/unit/specs",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "babel-eslint": "^7.2.1",
@@ -29,8 +31,10 @@
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
+    "husky": "^0.13.3",
     "jest": "^19.0.2",
-    "jest-vue-preprocessor": "^0.2.0"
+    "jest-vue-preprocessor": "^0.2.0",
+    "lint-staged": "^3.4.0"
   },
   "engines": {
     "node": ">= 4.0.0",
