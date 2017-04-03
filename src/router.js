@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import nprogress from 'nprogress'
 
 import Timetable from './pages/Timetable'
 import Settings from './pages/Settings'
@@ -24,16 +23,18 @@ const router = new Router({
 })
 
 if (process.env.BROWSER) {
-  const nprogress = require('nprogress')
-  require('nprogress/nprogress.css')
+  import('nprogress').then(nprogress => {
+    import('nprogress/nprogress.css')
 
-  router.beforeEach((from, to, next) => {
-    nprogress.start()
-    next()
+    router.beforeEach((from, to, next) => {
+      nprogress.start()
+      next()
+    })
+    router.afterEach(() => {
+      nprogress.done()
+    })
   })
-  router.afterEach(() => {
-    nprogress.done()
-  })
+
 }
 
 export default router
