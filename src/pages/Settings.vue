@@ -11,12 +11,12 @@
 <script>
   export default {
     name: 'Settings',
-    asyncData({ route }) {
+    asyncData ({ route }) {
       // testing the async data load
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve({
-            example: 'this is async loaded'
+            example: 'this is async loaded',
           })
         }, 2500)
       })
