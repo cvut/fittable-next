@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Timetable from './pages/Timetable'
+import Schedule from './pages/Schedule'
 import Settings from './pages/Settings'
 
 Vue.use(Router)
@@ -11,8 +11,8 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Timetable',
-      component: Timetable,
+      name: 'Schedule',
+      component: Schedule,
     },
     {
       path: '/settings',

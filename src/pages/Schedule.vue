@@ -1,12 +1,12 @@
 <template>
   <div>
-    Timetable page<br>
+    Schedule page<br>
     Go to <router-link to="/settings">the settings page</router-link>.
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Timetable',
+    name: 'Schedule',
   }
 </script>
