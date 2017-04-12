@@ -11,6 +11,7 @@
     "unit": "jest",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "flow": "flow check",
     "format": "eslint --fix --ext .js,.vue src test/unit/specs",
     "precommit": "lint-staged",
     "play": "vbuild -c play.config.js -d",

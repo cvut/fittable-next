@@ -16,6 +16,7 @@ before_script:
 - yarn run build
 script:
 - yarn run lint
+- yarn run flow
 - yarn test
 cache:
   yarn: true
