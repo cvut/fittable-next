@@ -17,18 +17,20 @@
     </header>
     <main>
       <nav class="page-toolbar">
-        <form class="date-picker">
+        <div class="date-picker">
           <div class="absolutenav">
-            <button class="absolutebutton">Today</button>
-            <input type="date" class="dateinput">
-            <button class="absolutebutton">Go</button>
+            <a href="#today" class="absolutebutton">Today</a>
+            <form action="/">
+              <input type="date" class="dateinput">
+              <button type="submit" class="absolutebutton">Go</button>
+            </form>
           </div>
           <div class="relativenav">
-            <button class="relativebutton -previous">Previous</button>
+            <a href="#previous" class="relativebutton -previous">Previous</a>
             <span class="actualdate">2 weeks, 2016/4/15 &mdash; 2016/4/28</span>
-            <button class="relativebutton -next">Next</button>
+            <a href="#next" class="relativebutton -next">Next</a>
           </div>
-        </form>
+        </div>
       </nav>
       <div class="page-content">
         <header>
