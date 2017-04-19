@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CTU Timetable</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Rozvrhy FIT</h1>
+      <nav class="mainnav">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Print</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav class="page-toolbar">
+        <form class="date-picker">
+          <div class="absolutenav">
+            <button class="absolutebutton">Today</button>
+            <input type="date" class="dateinput">
+            <button class="absolutebutton">Go</button>
+          </div>
+          <div class="relativenav">
+            <button class="relativebutton -previous">Previous</button>
+            <span class="actualdate">2 weeks, 2016/4/15 &mdash; 2016/4/28</span>
+            <button class="relativebutton -next">Next</button>
+          </div>
+        </form>
+      </nav>
+      <div class="page-content">
+        <header>
+          <h1>My schedules</h1>
+          <ul class="schedule-list">
+            <li><a href="#">Karel Pribyl</a></li>
+            <li><a href="#">Jaroslav Pribyl</a></li>
+          </ul>
+        </header>
+
+        <article class="agenda-week">
+          <h1>Teaching week 8</h1>
+          <a href="#">Show as grid</a>
+
+          <article class="agenda-day -current">
+            <h1>Wednesday, 4/17</h1>
+
+            <p class="time-indicator">
+              <em>Wed, 9.15 &mdash; 10.45</em>
+            </p>
+
+            <article class="agenda-item" id="event-10001">
+              <div class="badges">
+                <span title="From Karel Pribyl's schedule" class="badge">KP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-IOS, 8th&nbsp;tutorial</a></h1>
+                <p>
+                  parallel&nbsp;101,
+                  TH-A:1142&nbsp;(22/24&nbsp;occupied),
+                  Ing. Dominik Vesely
+                </p>
+              </div>
+              <a href="#event-10001-detail">Expand detail</a>
+            </article>
+
+            <p class="time-indicator">
+              <em>Wed, 11.00 &mdash; 12.30</em>
+            </p>
+
+            <article class="agenda-item -expanded" id="detail">
+              <div class="badges">
+                <span title="From Karel Pribyl's schedule" class="badge">KP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-PST, 8th&nbsp;lecture</a></h1>
+                <p>
+                  T9:105&nbsp;(222/222&nbsp;occupied),
+                  Ing. Tomas Kalvoda, Ph.D.
+                </p>
+              </div>
+              <div class="detail">
+                <dl>
+                  <dt>Subject</dt>
+                  <dd>BI-PST, Pravdepodobnost a statistika</dd>
+                  <dt>Room</dt>
+                  <dd>TH-A:1123</dd>
+                  <dt>Teacher</dt>
+                  <dd>Ing. Tomas Kalvoda, Ph.D.</dd>
+                </dl>
+              </div>
+              <div class="studentlist">
+                <a href="#">Show list of students</a>
+              </div>
+              <a href="#event-10002-detail">Hide detail</a>
+            </article>
+
+            <p class="time-indicator">
+              <em>Wed, 16.00 &mdash; 17.30</em>
+            </p>
+
+            <article class="agenda-item" id="event-10001">
+              <div class="badges">
+                <span title="From Karel Pribyl's schedule" class="badge">KP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-IOS, 8th&nbsp;tutorial,</a></h1>
+                parallel&nbsp;101,
+                TH-A:1142&nbsp;(22/24&nbsp;occupied),
+                Ing. Dominik Vesely
+              </div>
+              <a href="#event-10001-detail">Expand detail</a>
+            </article>
+          </article>
+
+          <article class="agenda-day">
+            <h1>Thursday, 4/18</h1>
+
+            <p class="time-indicator">
+              <em>Thu, 9.15 &mdash; 10.45</em>
+            </p>
+
+            <article class="agenda-item" id="event-10001">
+              <div class="badges">
+                <span title="From Jiri Pribyl's schedule" class="badge">JP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-IOS, 8th&nbsp;tutorial,</a></h1>
+                parallel&nbsp;101,
+                TH-A:1142&nbsp;(22/24&nbsp;occupied),
+                Ing. Dominik Vesely
+              </div>
+              <a href="#event-10001-detail">Expand detail</a>
+            </article>
+
+            <p class="time-indicator">
+              <em>Thu, 11.00 &mdash; 12.30</em>
+            </p>
+
+            <article class="agenda-item" id="event-10002">
+              <div class="badges">
+                <span title="From Karel Pribyl's schedule" class="badge">KP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-PST, 8th&nbsp;lecture,</a></h1>
+                T9:105&nbsp;(222/222&nbsp;occupied),
+                Ing. Tomas Kalvoda, Ph.D.
+              </div>
+              <a href="#event-10001-detail">Expand detail</a>
+            </article>
+
+            <p class="time-indicator">
+              <em>Thu, 16.00 &mdash; 17.30</em>
+            </p>
+
+            <article class="agenda-item" id="event-10001">
+              <div class="badges">
+                <span title="From Karel Pribyl's schedule" class="badge">KP</span>
+              </div>
+              <div class="summary">
+                <h1><a href="#">BI-IOS, 8th&nbsp;tutorial,</a></h1>
+                parallel&nbsp;101,
+                TH-A:1142&nbsp;(22/24&nbsp;occupied),
+                Ing. Dominik Vesely
+              </div>
+              <a href="#event-10001-detail">Expand detail</a>
+            </article>
+          </article>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
